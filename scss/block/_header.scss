@@ -5,6 +5,7 @@
         justify-content: space-between;
         background: #23856D;
         color: #FFFFFF;
+        align-items: center;
         a{
             color: #FFFFFF;
         }
@@ -15,6 +16,10 @@
             span{
                 padding-left: 10px;
             }
+        }
+        &--menu{
+            display: none;
+            padding: 10px 20px;
         }
     }
     &__menu{
@@ -107,13 +112,14 @@
         &--middle{
             display: flex;
             padding-left: 195px;
+            align-items: center;
+            justify-content: space-between;
             &__info{
-                margin-left: 53px;
-                margin-right: 200px;
+                margin: 0 200px 30px 53px;
             }
             &__img{
-                position: relative;
                 margin-bottom: 50px;
+                position: relative;
                 &--main{
                     margin-bottom: 20px;
                 }

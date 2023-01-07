@@ -8,7 +8,7 @@
             line-height: 24px;
             letter-spacing: 0.2px;
             color: #737373;
-            margin: 34px 500px;
+            margin: 34px 400px;
             &__reviews{
                 &::after{
                     content: "(0)";
@@ -92,6 +92,7 @@
             justify-content: space-between;
             flex-wrap: wrap;
             margin-top: 24px;
+            align-items: center;
             &__container{
                 padding-bottom: 24px;
             }
@@ -136,8 +137,9 @@
 
 .logos{
     background: #FAFAFA;
-    padding: 50px 200px;
+    padding: 50px 50px;
     img{
         padding-left: 80px;
+        cursor: pointer;
     }
 }

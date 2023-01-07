@@ -1,0 +1,229 @@
+@media screen and (max-width: (1400px)) {
+    .header{
+        &__main{
+            width: 100%;
+            padding: 20px 100px;
+
+        }
+        &__menu{
+            padding: 30px 90px;
+        }
+    }
+    .product{
+        &__main{
+            &--item{
+                margin: 34px 300px;
+            }
+        }
+        &__stuff{
+            padding: 50px 60px 0 137px;
+        }
+    }
+    .footer{
+        &__navigation{
+            padding: 53px 90px 53px 90px;
+        }
+
+    }
+}
+
+@media screen and (max-width: (1199px)) {
+    .header{
+        &__main{
+            padding: 20px 5px;
+            font-size: 14px;
+        }
+        &__menu{
+            padding: 30px 50px;
+        }
+        &__home{
+            &--middle{
+                padding-left: 95px;
+            }
+        }
+    }
+    .product{
+        &__info{
+            margin-left: 33px;
+            margin-right: 100px;
+        }
+        &__stuff{
+            padding: 50px 30px;
+        }
+    }
+    .footer{
+        &__navigation{
+            padding: 53px 5px 53px 5px;
+        }
+
+    }
+    .logos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: (991px)) {
+    .header{
+        &__main{
+            display: none;
+            &--menu{
+                display: flex;
+                justify-content: space-between;
+                img{
+                    cursor: pointer;
+                }
+            }
+        }
+        &__menu{
+            padding: 30px 20px;
+            h1{
+                display: none;
+            }
+        }
+        &__home{
+            &--middle{
+                flex-wrap: wrap;
+                // flex-direction: column;
+                &__img{
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+    .product{
+        &__info{
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+        span{
+            // line-height: 14px;
+            // font-size: 14px;
+        }
+    }
+    .footer{
+        &__main{
+            padding: 53px 160px 53px 90px;
+        }
+        &__navigation{
+            flex-wrap: wrap;
+            row-gap: 60px;
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: (767px)) {
+    .header{
+        &__menu{
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__home{
+            &--middle{
+                &__img{
+                    &--main{
+                        width: 93%;
+                    }
+                    &--right{
+                        right: 60px;
+                    }
+                }
+            }
+        }
+    }
+    .product{
+        &__main{
+            &--item{
+                margin: 34px 100px;
+            }
+        }
+    }
+    .footer{
+        &__navigation{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__cellars{
+            text-align: center;
+            padding-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: (567px)) {
+    .header{
+        &__menu{
+            a{
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 45px;
+            }
+            &--list{
+                align-items: center;
+                width: 100%;
+                flex-direction: column;
+                &__home{
+                    color: #252B42;
+                }
+                &__img{
+                    display: none;
+                }
+            }
+            &--log{
+                flex-direction: column;
+                img{
+                    width: 30px;
+                }
+            }
+            &--img{
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 30px;
+            }
+        }
+    }
+    .product{
+        &__stuff{
+            &--prise{
+                flex-direction: column;
+                img{
+                    width: 350px;
+                }
+            }
+        }
+    }
+    .logos{
+        flex-direction: column;
+    }
+    .footer{
+        &__main{
+            flex-direction: column;
+            align-items: center;
+            row-gap: 30px;
+        }
+        &__navigation{
+            padding-left: 40px;
+            flex-direction: row;
+            justify-content: flex-start;
+            &--main{
+                flex-direction: column;
+                row-gap: 30px;
+            }
+        }
+        &__cellars{
+            padding: 25px 110px;
+        }
+    }
+}

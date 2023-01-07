@@ -21,7 +21,7 @@
     &__navigation{
         display: flex;
         justify-content: space-between;
-        padding: 53px 260px 53px 190px;
+        padding: 53px 160px 53px 90px;
         &--title{
             font-weight: 700;
             font-size: 16px;
@@ -73,6 +73,11 @@
             line-height: 28px;
             letter-spacing: 0.2px;
             color: #737373;
+        }
+        &--main{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 30px;
         }
         
     }

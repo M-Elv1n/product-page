@@ -14,6 +14,10 @@
 </head>
 <body>
     <header class="header">
+        <div class="header__main--menu">
+            <h1 class="header__menu--logo">Bandage</h1>
+            <img src="img/header/menu.svg" alt="">
+        </div>
         <div class="header__main">
             <div class="header__main--call">
                 <img src="img/header/call.svg" alt="">
@@ -38,9 +42,9 @@
         <div class="header__menu">
             <h1 class="header__menu--logo">Bandage</h1>
             <ul class="header__menu--list">
-                <li><a href="" class="header__menu--link">Home</a></li>
+                <li><a href="" class="header__menu--link"><span class="header__menu--list__home">Home</span></a></li>
                 <li><a href="" class="header__menu--link">Shop</a></li>
-                <li><img src="img/header/down.svg" alt=""></li>
+                <li><img class="header__menu--list__img" src="img/header/down.svg" alt=""></li>
                 <li><a href="" class="header__menu--link">About</a></li>
                 <li><a href="" class="header__menu--link">Blog</a></li>
                 <li><a href="" class="header__menu--link">Contact</a></li>
@@ -50,7 +54,7 @@
                 <div class="header__menu--input">
                     <img src="img/header/person.svg" alt="">
                     <a href="">Login</a>
-                    <span>/</span>
+                    <a href="">/</a>
                     <a href="">Register</a>
                 </div>
                 <div class="header__menu--img">
@@ -74,9 +78,11 @@
             </div>
             <div class="header__home--middle">
                 <div class="header__home--middle__img">
-                    <img src="img/header/home/chair.jpg" class="header__home--middle__img--main" alt="">
-                    <img src="img/header/home/left.svg" class="header__home--middle__img--left" alt="">
-                    <img src="img/header/home/rigth.svg" class="header__home--middle__img--right" alt="">
+                    <div>
+                        <img src="img/header/home/chair.jpg" class="header__home--middle__img--main" alt="">
+                        <img src="img/header/home/left.svg" class="header__home--middle__img--left" alt="">
+                        <img src="img/header/home/rigth.svg" class="header__home--middle__img--right" alt="">
+                    </div>
                     <img src="img/header/home/pewMin.jpg" alt="">
                     <img src="img/header/home/chairMin.jpg" alt="">
                 </div>
@@ -282,34 +288,36 @@
         </div>
         <hr>
         <div class="footer__navigation">
-            <ul class="footer__navigation--info">
-                <h5 class="footer__navigation--title">Company Info</h5>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">About Us</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Carrier</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">We are hiring</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Blog</a></li>
-            </ul>
-            <ul class="footer__navigation--legal">
-                <h5 class="footer__navigation--title">Legal</h5>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">About Us</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Carrier</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">We are hiring</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Blog</a></li>
-            </ul>
-            <ul class="footer__navigation--features">
-                <h5 class="footer__navigation--title">Features</h5>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Business Marketing</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">User Analytic</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Live Chat</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Unlimited Support</a></li>
-            </ul>
-            <ul class="footer__navigation--resources">
-                <h5 class="footer__navigation--title">Resources</h5>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">IOS & Android</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Watch a Demo</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Customers</a></li>
-                <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">API</a></li>
-            </ul>
+            <div class="footer__navigation--main">
+                <ul class="footer__navigation--info">
+                    <h5 class="footer__navigation--title">Company Info</h5>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">About Us</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Carrier</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">We are hiring</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Blog</a></li>
+                </ul>
+                <ul class="footer__navigation--legal">
+                    <h5 class="footer__navigation--title">Legal</h5>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">About Us</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Carrier</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">We are hiring</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Blog</a></li>
+                </ul>
+                <ul class="footer__navigation--features">
+                    <h5 class="footer__navigation--title">Features</h5>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Business Marketing</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">User Analytic</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Live Chat</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Unlimited Support</a></li>
+                </ul>
+                <ul class="footer__navigation--resources">
+                    <h5 class="footer__navigation--title">Resources</h5>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">IOS & Android</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Watch a Demo</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">Customers</a></li>
+                    <li class="footer__navigation--item"><a href="" class="footer__navigation--item__link">API</a></li>
+                </ul>
+            </div>
             <ul class="footer__navigation--touch">
                 <h5 class="footer__navigation--title">Get In Touch</h5>
                 <div class="footer__navigation--form">
